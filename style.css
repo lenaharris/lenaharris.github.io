@@ -1,0 +1,132 @@
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  background-color: white;
+  
+  max-width: 200%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative ;
+}
+
+.headimg {
+  min-width: 100%;
+  max-height: 40%;
+  left-margin: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.name {
+  min-width: 50%;
+  left-margin: 50px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  color: white;
+  font-size:40px;
+  font-family: Arial, Helvetica;
+}
+
+.wrapper {
+  background-color: white;
+  max-width: 200%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 300px;
+}
+
+.bar{
+background-color: white;
+min-width: 100%;
+  left-margin: 0px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.main {
+  background-color: white;
+  max-width: 200%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: white;
+  
+  margin-left: 15px;
+  margin-top: 60px;
+  margin-right: 20px;
+  min-width: 25%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meimg {
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.school {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom:0px;
+  color: black;
+  font-size:15px;
+  font-family: Arial, Helvetica;
+  text-align: center;
+}
+
+.links {
+  list-style-type: none;
+  margin-left: -30px;
+  margin-top: -20px;
+  color: black;
+  font-size:20px;
+  font-family: Arial, Helvetica;
+  text-align: center;
+}
+
+.center {
+  background-color: white;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  max-width: 90%;
+  align-items: center;
+  margin-top: 115px;
+  font-size:23px;
+  font-family: Arial, Helvetica;
+}
+
+.papers {
+  max-width: 80%;
+  align-items: center;
+  margin-top: 50px;
+  font-size:16px;
+  font-family: Arial, Helvetica;
+}
