@@ -1,5 +1,3 @@
-@media screen and (max-width: 481px){ 
-
 html, body {
   display: flex;
   align-items: center;
@@ -34,7 +32,7 @@ ul {
 
 .name {
   min-width: 50%;
-  left-margin: 50px;
+  left-margin: 50%;
   position: absolute;
   top: 5%;
   left: 10%;
@@ -128,8 +126,7 @@ min-width: 100%;
 .papers {
   max-width: 80%;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 50px;
   font-size:16px;
   font-family: Arial, Helvetica;
-}
 }
