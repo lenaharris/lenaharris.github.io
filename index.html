@@ -1,102 +1,194 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-	<!-- Page Title -->
-        	<title>Lena Harris</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta charset="utf-8"/>
-	<!-- Meta Info for Search -->
-  		<meta name="description" content="Lena Harris, Economics PhD student at University of Rochester.">
-  		<meta name="author" content="Lena Harris">
-	<!-- Mobile Compatible -->
-		<link href="/style.css" rel="stylesheet" type="text/css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style>
-			/* CSS styles for mobile devices */
-			@media (max-width: 600px) {
-				.column {
-					width: 100% !important;
-					display: block !important;
-				}
-			}
-			.about {
-				margin-top: 40px; /* Adjust the value based on your preference */
-			}
-		</style>
-	</head>
-  
-  <body>
-  <div class = "wrapper">
-	<!-- Page Main Header -->
-		<!-- Header image -->
-			<img  class = "headimg" src = "images/header.jpeg" width = "200" /> 
+<html lang="en">
+<head>
+<!-- Header tab info -->
+  <title>Lena Harris</title>
+<!-- Meta Info for Search -->
+  <meta name="description" content="Lena Harris, Economics PhD student at University of Rochester.">
+  <meta name="author" content="Lena Harris">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<div class = "name">
-      	<h1>Lena Harris</h1>
-	</div>
-        <div class = "bar">
-        </div> 
+<!-- SET STYLE GUIDES --!>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-	<div class = "main">
-		<div class = "sidebar">
-			<!-- Picture of me -->
-				<img class = "meimg" src = "images/profile_pic.jpeg" width = 
-"250" />
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
 
-			<!-- Links -->
-			<div class = "school">
-			<h2>
-			University of Rochester <br>
-			PhD Candidate
-			</h2>
-			</div>
-			<div class = "links">
-			<ul>
-			<li> h.harris at rochester.edu </li>
-			<li><a href="https://lenaharris.github.io/assets/CV.pdf">CV</a>  <a href="https://github.com/lenaharris">Github</a></li>
-     			</ul>
-			</div>
-		</div>
-		
-		<div class = "center">
-			<!-- Bio -->
-				<p class = "bio">
-				My name is Lena Harris and I am a graduate student at the <a href="http://www.sas.rochester.edu/eco/">University of Rochester </a>. My research is in environmental economics with a focus on water scarcity. In addition to my individual work, I work at the intersection of health and environmental economics with the <a href="https://www.urmc.rochester.edu/labs/hill.aspx">HEEL Lab </a> at Rochester.
-				
+ul {
+  list-style-type: none;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: left;
+  background: darkgreen;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 80px;
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Image of Me */
+.meimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/* Bio box*/
+.bio {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  font-size: 24px; 
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+
+
+
+<!-- BEGIN MATERIAL FOR WEBSITE --!>
+<body>
+
+<div class="header">
+  <h1>Lena Harris</h1>
+</div>
+
+<div class="row">
+  <div class="side">
+     <img class = "meimg" src = "images/profile_pic.jpeg" />
+
+    <h4>
+	University of Rochester <br>
+	PhD Candidate
+    </h4>
+    <p> h.harris at rochester.edu </p>
+    <a href="https://lenaharris.github.io/assets/CV.pdf">CV</a>  <a href="https://github.com/lenaharris">Github</a>
+    </ul>
+  </div>
+
+  <div class="main">
+    <!-- Bio --!>
+    <div class = "bio" >
+    <p>
+My name is Lena Harris and I am a graduate student at the <a href="http://www.sas.rochester.edu/eco/">University of Rochester </a>. My research is in environmental economics with a focus on water scarcity. In addition to my individual work, I work at the intersection of health and environmental economics with the <a href="https://www.urmc.rochester.edu/labs/hill.aspx">HEEL Lab </a> at Rochester.
+<br>				
 Outside of research, I enjoy hiking, gardening, and crocheting.
 				</p>
-			<!-- Research -->
-			<div class = "papers">
-			<h2>
-			Published Papers
-			</h2>
-			<p>
-<b>Changes in Socioeconomic Disparities for Traffic-Related Air Pollution Exposure During Pregnancy Over a 20-Year Period in Texas </b> with Mary Willis, Elaine Hill, Collette Ncube, Erin Campbell, Max Harleman, Beate Ritz, and Perry Hystad <br>
+    </div>
+    <!-- Published Papers -->
+	<h2>
+	  Published Papers
+	</h2>
+        <p>
+	  <b> Changes in Socioeconomic Disparities for Traffic-Related Air Pollution Exposure During Pregnancy Over a 20-Year Period in Texas </b> with Mary Willis, Elaine Hill, Collette Ncube, Erin Campbell, Max Harleman, Beate Ritz, and Perry Hystad <br>
 <a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972304086X?via%3Dihub">JAMA Network Open</a> Forthcoming
  <br> <br>
 
-<b> Changes in traffic congestion and air pollution due to major roadway infrastructure improvements in Texas </b> with Max Harleman, Mary Willis, Beate Ritz, Perry Hystad, and Elaine Hill <br>
+	  <b> Changes in traffic congestion and air pollution due to major roadway infrastructure improvements in Texas </b> with Max Harleman, Mary Willis, Beate Ritz, Perry Hystad, and Elaine Hill <br>
 <a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972304086X?via%3Dihub">Science of the Total Environment</a>  2023
 <br> <br>
 
-<b>A population-based cohort study of traffic congestion and infant growth using connected vehicle data </b> with Mary Willis, David Schrank, Chunxue Xu, Beate Ritz, Elaine Hill, and Perry Hystad <br>
+	  <b>A population-based cohort study of traffic congestion and infant growth using connected vehicle data </b> with Mary Willis, David Schrank, Chunxue Xu, Beate Ritz, Elaine Hill, and Perry Hystad <br>
 <a href="https://www.science.org/doi/10.1126/sciadv.abp8281">Science Advances</a>  2022
 <br> <br>
-			</p>
-			<h2>
-			Working Papers
-			</h2>
-			<b> Farmer Response to Policy Induced Water Reductions: Evidence from the Colorado River </b> <br>
-			<a href="https://lenaharris.github.io/assets/co_riv.pdf"> Draft </a>
-			<br> <br>
-			<b> Drought and Renewable Energy</b> <br> <br>
-			<b> Lake Desiccation and Pregnancy Loss</b> <br> <br>
-			<b> Congestion Reducing Construction and Home Prices</b> with Max Harleman, Elaine Hill, Mary Willis and Perry Hystad <br> <br>
-			<b> Assessing the influence of transitioning to electronic tolling on adverse birth outcomes</b> with Mary Willis, Erin Campbell, Mira Chaskes, Ethan Sawyer, Max Harleman, Elain Hill, Beate Ritz, and Perry Hystad <br> <br>
-			</div>
+	</p>
 
-	</div>
+
+
+    <!-- Working Papers -->
+    <h2>
+	Working Papers
+    </h2>
+	<b> Farmer Response to Policy Induced Water Reductions: Evidence from the Colorado River </b> <br>
+	<a href="https://lenaharris.github.io/assets/co_riv.pdf"> Draft </a>
+	<br> <br>
+	<b> Drought and Renewable Energy</b> <br> <br>
+	<b> Lake Desiccation and Pregnancy Loss</b> <br> <br>
+	<b> Congestion Reducing Construction and Home Prices</b> with Max Harleman, Elaine Hill, Mary Willis and Perry Hystad <br> <br>
+	<b> Assessing the influence of transitioning to electronic tolling on adverse birth outcomes</b> with Mary Willis, Erin Campbell, Mira Chaskes, Ethan Sawyer, Max Harleman, Elain Hill, Beate Ritz, and Perry Hystad <br> <br>
   </div>
-  </body>
+</div>
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
