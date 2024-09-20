@@ -31,13 +31,13 @@ ul {
 .header {
   padding: 0px;
   text-align: left;
-  background: white;
+  background: black;
   color: white;
 }
 
 .name {
     position: absolute;
-    font-size: 6vw;
+    font-size: 4.5vw;
     color: white;
     top: 5vw;
     left: 5%;
@@ -54,14 +54,14 @@ ul {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: white;
-  padding: 1vw; 
-  
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  /*background-color: #afe9f9; */
+  background-color: #6c728a; 
+  padding: 0vw; 
+  padding-top: 3vw;
   text-align: center;
-  font-size: 3vh;
-
+  font-size: 2.75vh;
 }
 
 /* Main column */
@@ -71,7 +71,8 @@ ul {
   background-color: white;
   padding-left: 5vw;
   padding-right: 5vw;
-  font-size: 2.5vh;
+  padding-top: 2vw;
+  font-size: 2vh;
 }
 
 /* Image of Me */
@@ -84,10 +85,11 @@ ul {
 
 /* Bio box*/
 .bio {
-  padding: 0vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   text-align: center;
   background: white;
-  font-size: 3.5vh; 
+  font-size: 2.75vh; 
 }
 
 /* Footer */
@@ -99,9 +101,9 @@ ul {
 
 /* Image of smaug */
 .smaug {
+  display: block;
   background-color: white;
   width: 20%;
-  padding: 1vw;
 }
 
 
@@ -136,7 +138,7 @@ ul {
 
 <div class="row">
   <div class="side">
-     <img class = "meimg" src = "images/profile_pic.jpeg" />
+     <img class = "meimg" src = "images/profile_pic.jpg" />
 
     <h4>
 	University of Rochester <br>
@@ -153,7 +155,8 @@ ul {
     <p>
 I am a graduate student at the <a href="http://www.sas.rochester.edu/eco/">University of Rochester</a>. My research is in environmental and health economics, with a focus on water scarcity. In addition to my individual work, I work with the <a href="https://www.urmc.rochester.edu/labs/hill.aspx">HEEL Lab </a> at Rochester.
 <br>	<br>			
-I will be on the job market in 2024-2025.
+I will be on the job market in 2024-2025. <br>
+____________________ <br> <br> 
 				</p>
     </div>
     <!-- Published Papers -->
@@ -192,20 +195,18 @@ Max Harleman, Beate Ritz, Elaine L. Hill, Perry Hystad <br>
 	</p>
 
 
-
     <!-- Working Papers -->
     <h2>
 	Working Papers
     </h2>
 	<b> Drought and Investment in Electricity Markets (JMP) </b> <br> <br>
 	<b> Lake Desiccation and Pregnancy Loss</b> <br> <br>
+
+<br> <br> <br> <br>
+<img class = "smaug" align = "right" src = "images/smaug.png" />
   </div>
-</div>
 
-
-<div class = "footer">
-<img class = "smaug" src = "images/smaug.png" />
-</div>
+ </div>
 </body>
 </html>
 
